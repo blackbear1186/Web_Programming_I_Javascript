@@ -1,0 +1,80 @@
+/*use reset selector to set margins and paddings to 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 960px;
+    /*margin at top and bottom of border of body*/
+    margin: 1em auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    /*create a box shadow along the border of the body element*/
+    box-shadow: 2px 2px 3px 3px green;
+}
+html {
+    height: 100%;
+    /*linear gradient of background color*/
+    background-image: -webkit-linear-gradient(to bottom, white 0%,
+    beige 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, beige 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, beige 100%);
+    background-image: linear-gradient(to bottom, white 0%, beige 100%);
+}
+header {
+    height: 200px;
+    border-bottom: 1px solid black;
+
+}
+header h1 {
+    color: #cb84ab;
+    /*create text shadow on the main header*/
+    text-shadow: 2px 2px green;
+}
+header img {
+    float: left;
+    /*make the image circular in shape*/
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 5px 20px;
+}
+main h2 {
+    margin: 20px;
+    color: #cb84ab;
+}
+/*increase the size of the first letter on h2 of main*/
+main h2:first-child::first-letter {
+    font-size: 150%;
+    text-shadow: 2px 2px green;
+}
+main h3 {
+    margin: 20px;
+    color: #cb84ab;
+}
+main p {
+    margin: 20px;
+}
+main li {
+    margin: 5px 40px;
+}
+/*change the of the link to orange when hovering over*/
+main a:hover, a:focus {
+    color: orange;
+}
+footer {
+    border-top: 1px solid black;
+    background-color: beige;
+    /*styles to make bottom border rounded*/
+    margin: auto;
+    padding: 1em;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+footer p {
+    text-align: center;
+    font-size: .8em;
+
+}

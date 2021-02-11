@@ -1,0 +1,148 @@
+/*use reset selector to set margins and paddings to 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 960px;
+    /*margin at top and bottom of border of body*/
+    margin: 1em auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    /*create a box shadow along the border of the body element*/
+    box-shadow: 2px 2px 3px 3px cornflowerblue;
+
+}
+html {
+    height: 100%;
+    /*linear gradient of background color*/
+    background-image: -webkit-linear-gradient(to bottom, white 0%,
+    beige 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, beige 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, beige 100%);
+    background-image: linear-gradient(to bottom, white 0%, beige 100%);
+}
+header {
+    height: 280px;
+
+
+}
+header h1 {
+    color: #cb84ab;
+    /*create text shadow on the main header*/
+    text-shadow: 2px 2px cornflowerblue;
+}
+header img {
+    float: left;
+    /*make the image circular in shape*/
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 5px 20px;
+}
+#nav_menu ul {
+    clear: both;
+}
+#nav_menu ul li {
+    float: left;
+    list-style-type: none;
+    width: 240px;
+    text-align: center;
+    background-color: cornflowerblue;
+
+}
+#nav_menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+
+}
+#nav_menu ul li a:hover, a:focus {
+    font-size: 110%;
+    background-color:  #cb84ab;
+
+}
+#nav_menu ul li a.current {
+    color: yellow;
+}
+section {
+    clear: both;
+    width: 600px;
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+#first_h2:first-child::first-letter {
+    font-size: 150%;
+    text-shadow: 2px 2px cornflowerblue;
+}
+#first_h2 {
+    color: #cb84ab;
+}
+#section_home p {
+    margin: 20px 0 20px 0;
+}
+aside {
+    margin:10px;
+}
+#food_links ul li {
+
+    float: left;
+    width: 305px;
+    list-style-type: none;
+
+}
+#food_links ul li a {
+    display: block;
+    text-decoration: none;
+    margin: .25em;
+    border: 2px solid black;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: white;
+}
+#food_links ul li a:hover, a:focus {
+    font-size: 110%;
+    background-color:  #cb84ab;
+
+}
+#dish_sect ul {
+    margin: 10px 0 20px 0;
+}
+#dish_sect ul li {
+    text-indent: 2em;
+}
+#dish_sect h2 {
+    margin-bottom: 10px;
+    color: cornflowerblue;
+    text-shadow: 2px 2px #cb84ab;
+}
+#dish_sect h3 {
+
+    margin: 10px 0 10px 0;
+    color: cornflowerblue;
+}
+#dish_sect img{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid black;
+    background-color: beige;
+    /*styles to make bottom border rounded*/
+    margin: auto;
+    padding: 1em;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+footer p {
+    text-align: center;
+    font-size: .8em;
+}

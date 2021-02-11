@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4ee15fc7-5e65-4972-91d6-1653b308a904" name="webdsu.com" url="http://webdsu.com/cis275/berlin275">
+        <fileTransfer accessType="FTPS" host="webdsu.com" port="21">
+          <advancedOptions>
+            <advancedOptions passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

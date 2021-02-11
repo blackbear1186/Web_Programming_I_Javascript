@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #ffffff;
+
+}
+header {
+    height: 200px;
+}
+header img {
+    float: left;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 5px 20px;
+}
+main h2 {
+    margin: 20px;
+}
+main h3 {
+    margin: 20px;
+}
+main p {
+    margin: 20px;
+}
+main li {
+    margin-left: 40px;
+}
+footer p {
+    margin: 20px;
+}

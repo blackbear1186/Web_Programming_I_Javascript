@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Johnson - Lab 5 - Contact</title>
+        <link rel="shortcut icon" href="images/sakura.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function (){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    <body>
+    <header>
+        <img src="images/Sakura-Mt-fuji-japan-759x500.jpg" alt="Mt Fuji and Sakura Tree">
+        <h1>Japan's Most Delicious Dishes</h1>
+        <h2>My Favorite Food to Eat in Japan</h2>
+    </header>
+
+<!--nav for the collapsible menu-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="dishes.html">Dishes</a></li>
+            <li><a href="contact.html" class="current">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+            <section id="sec_form">
+                <h2 id="contact_head">Email Berlin</h2>
+                <form action="confirm.html" method="get" name="confirm_form"
+                id="confirm_form">
+                    <p>Please enter the following information:</p>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" autofocus required><br>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="999-999-9999"
+                    pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format" required>
+                    <input type="submit" id="submit" value="Send Email">
+                </form>
+
+            </section>
+            <aside>
+                <nav id="food_links">
+                    <ul>
+                        <li><a href="https://www.tsunagujapan.com/50-japanese-foods-to-try-while-you-are-in-japan/" target="_blank">50 Japanese Foods to Try</a></li>
+                        <li><a href="https://www.tsunagujapan.com/20-must-try-japanese-drinks/"  target="_blank">20 Must-Try Japanese Beverages</a></li>
+                        <li><a href="https://www.klook.com/blog/souvenirs-hokkaido-2018/" target="_blank">27 Hokkaido Snacks to Eat</a></li>
+                        <li><a href="https://www.mytravelbuzzg.com/top-10-must-eat-food-in-hokkaido/" target="_blank">Hokkaido Food Guide</a></li>
+                    </ul>
+                </nav>
+            </aside>
+    </main>
+
+        <footer>
+            <p>&copy; 2020 Berlin Johnson</p>
+
+        </footer>
+
+    </body>
+</html>

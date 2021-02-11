@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Johnson Lab 10</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+</head>
+<body>
+    <section>
+        <h1>Berlin Johnson's Spring Schedule</h1>
+        <div id="accordion">
+            <h3>CIS 375 - Web Application Programming II</h3>
+            <div>
+                <p>An introduction to the languages used to develop web applications with focus on server-side technologies. Topics include issues common to the development of web applications, such as data-driven content, security, and architecture. 
+				Prerequisite(s): CIS 275 or MCOM 351
+				</p>
+            </div>
+            <h3>CSC 300 - Data Structures</h3>
+            <div>
+                <p>
+                   A systematic study of data structures and the accompanying algorithms used in computing problems; structure and use of storage; methods of representing data; techniques for implementing data structures; linear lists; stacks; queue; trees and tree traversal; linked lists; and other structures. 
+				   Prerequisites(s): CSC 250
+                </p>
+            </div>
+            <h3>MATH 316 - Discrete Mathematics</h3>
+            <div>
+                <p>
+                    Selected topics from Boolean algebra, set theory, logic, functions and relations, difference equations, recurrence relations, application of algorithms, finite graphs, trees, paths and modeling. 
+					Prerequisite(s): Math 201
+                </p>
+            </div>
+			<h3>CSC 314 - Assembly Language</h3>
+			<div>
+				<p>
+					A thorough introduction to assembly language programming and processor architecture. A study of low-level programming techniques, and the layout of a typical computer. The student will gain insight into the memory layout, registers run-time stack, and global data segment of a running program.
+					Prerequisites(s): CSC 250
+				</p>
+			</div>
+        </div>
+    </section>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+    $(document).ready( () => {
+       $('#accordion').accordion({
+           event: "click",
+           heightStyle: "content",
+           collapsible: true
+       });
+    });
+</script>
+</body>
+</html>

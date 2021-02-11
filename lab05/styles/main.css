@@ -1,0 +1,293 @@
+/*use reset selector to set margins and paddings to 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 98%;
+    max-width: 960px;
+    /*margin at top and bottom of border of body*/
+    margin: 16px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    /*create a box shadow along the border of the body element*/
+    box-shadow: 2px 2px 3px 3px cornflowerblue;
+
+}
+html {
+    height: 100%;
+    /*linear gradient of background color*/
+    background-image: -webkit-linear-gradient(to bottom, white 0%,
+    beige 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, beige 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, beige 100%);
+    background-image: linear-gradient(to bottom, white 0%, beige 100%);
+}
+header {
+    height: auto;
+    //width: 96%;
+}
+header h1 {
+    color: #cb84ab;
+    /*create text shadow on the main header*/
+    text-shadow: 2px 2px cornflowerblue;
+}
+header img {
+
+    /*make the image circular in shape*/
+    float: left;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 5px 20px;
+}
+#nav_menu ul {
+    clear: both;
+    /*make navigation menu flexbox*/
+    display: flex;
+    /*use flex-basis to set width of nav bar to 100%*/
+    flex-basis: 100%;
+    justify-content: space-between;
+
+}
+#nav_menu ul li {
+
+    flex-basis: 25%;
+    list-style-type: none;
+    text-align: center;
+    background-color: cornflowerblue;
+
+}
+#nav_menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+#nav_menu ul li a:hover, a:focus {
+    font-size: 110%;
+    background-color:  #cb84ab;
+
+}
+/*make text yellow on nav menu current page*/
+#nav_menu ul li a.current {
+    color: yellow;
+}
+/*make main of the page flexbox*/
+main {
+    display: flex;
+}
+section {
+
+    flex-basis: 68%;
+    order: 2;
+    margin: 1% 0 0 2.5%;
+}
+#figcap_dish {
+    display: block;
+    font-style: italic;
+}
+aside ul li {
+    /*make links responsive by setting the width to 98%*/
+    width: 98%;
+}
+#first_h2:first-child::first-letter {
+    font-size: 150%;
+    text-shadow: 2px 2px cornflowerblue;
+}
+#first_h2 {
+    color: #cb84ab;
+}
+#section_home p {
+    margin: 20px 0 20px 0;
+}
+/*style aside vertical navigation menu*/
+#food_links ul {
+    margin: 6% 3% 3% 3%;
+    flex-basis: 30%;
+    order: 1;
+}
+#food_links ul li {
+    list-style-type: none;
+}
+#food_links ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 2%;
+    border: 2px solid black;
+    background-color: cornflowerblue;
+    padding: 5%;
+    color: white;
+}
+#food_links ul li a:hover, a:focus {
+    /*increase size and change color of vertical menu links when hovered over*/
+    font-size: 110%;
+    background-color:  #cb84ab;
+}
+#dish_sect ul {
+    margin: 3% 0 6% 0;
+}
+#dish_sect ul li {
+    text-indent: 2em;
+}
+#dish_sect h2 {
+    margin-bottom: 10px;
+    color: cornflowerblue;
+    text-shadow: 2px 2px black;
+}
+#dish_sect h3 {
+
+    margin: 3% 0 3% 0;
+    color: cornflowerblue;
+}
+#dish_sect img{
+
+    max-width: 40%;
+    min-width: 150px;
+}
+/*make the figure image align left*/
+#fig_img {
+    margin-left: 0;
+}
+footer {
+    clear: both;
+    border-top: 1px solid black;
+    background-color: beige;
+    /*styles to make bottom border rounded*/
+    //margin: auto;
+    padding: 16px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+footer p {
+    text-align: center;
+    font-size: .8em;
+}
+/*hide the collapsible menu when over 770px*/
+#mobile_menu {
+    display: none;
+}
+/*mobile landscape to tablet portrait*/
+@media only screen and (max-width: 767px) {
+    header img {
+        float: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+
+    }
+
+    section {
+        order: 1;
+        width: 95%;
+    }
+
+    aside {
+        order: 2;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #food_links ul li a {
+        padding: 2%;
+    }
+
+    #nav_menu {
+        /*removes the original navigation menu*/
+        display: none;
+    }
+    #mobile_menu {
+        /*displays the slicknav menu for mobile phones*/
+        display: block;
+    }
+    .slicknav_menu {
+        /*override slicknav css properties background color with "!important"*/
+        background-color: cornflowerblue !important;
+    }
+}
+@media only screen and (max-width: 479px){
+    body {
+        /*reduce size of font when on small mobile phones*/
+        font-size: 85%;
+    }
+}
+table {
+    /*make table align center*/
+    margin: auto;
+    /*eliminates the space between borders of cells*/
+    border-collapse: collapse;
+}
+/*styles for figcaption for favorites*/
+#table_title {
+    /*display to change figcaption form inline to block for ease of formatting*/
+    display: block;
+    font-weight: bold;
+    //font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: .5em;
+
+}
+th {
+    background-color: cornflowerblue;
+    padding: .2em .6em;
+    color: white;
+}
+th:last-child, td:last-child {
+    text-align: right;
+}
+th:nth-child(2), td:nth-child(2) {
+    text-align: center;
+}
+td {
+    padding: .2em .6em;
+}
+#contact_head {
+    margin-bottom: .5em;
+
+}
+#contact_head:first-child::first-letter {
+    font-size: 150%;
+}
+form>p {
+    font-weight: bold;
+    margin-bottom: .5em;
+
+}
+label, input {
+    font-size: 90%;
+}
+label {
+    float: left;
+    width: 7em;
+    text-align: right;
+}
+input {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+#submit {
+    display: block;
+    width: 8em;
+    margin-left: 7.5em;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid black;
+    padding: .2em;
+}
+textarea {
+    height: 5em;
+    width: 20em;
+}
